@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Optimal Path - 최적가 패스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Optimal Path</h1>
+            <p>당신의 시간을 아껴주는 AI 쇼핑 대행</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <textarea id="userInput" placeholder="예: 캠핑 갈 건데 가성비 좋은 텐트 하나 사줘 (취향, 카드사, 배송 고려)"></textarea>
+                <button id="analyzeBtn">최적가 패스 실행</button>
+            </section>
+
+            <section id="loadingSection" class="hidden">
+                <div class="loader"></div>
+                <p id="loadingText">사용자 패턴 및 혜택 분석 중...</p>
+            </section>
+
+            <section id="resultSection" class="hidden">
+                <div class="recommendation-card">
+                    <div class="badge">AI BEST PICK</div>
+                    <h2 id="productName">초경량 4인용 돔 텐트</h2>
+                    <div class="price-info">
+                        <span class="final-price">125,400원</span>
+                        <span class="discount-tag">현대카드 5% 추가할인</span>
+                    </div>
+                    
+                    <ul class="reason-list">
+                        <li>⚡ <strong>내일 아침 7시</strong> 도착 보장</li>
+                        <li>📉 30일 내 <strong>최저가</strong> 대비 2,000원 저렴</li>
+                        <li>❤️ 평소 선호하는 <strong>'블랙'</strong> 컬러 재고 확보</li>
+                    </ul>
+
+                    <button class="buy-btn">1초 만에 결제하기</button>
+                </div>
+                <div class="time-saved">
+                    ⏱ 이 결정으로 **24분**의 고민 시간을 아꼈습니다!
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
